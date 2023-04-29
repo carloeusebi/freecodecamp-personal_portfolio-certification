@@ -1,0 +1,36 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* generals */
+:root{
+    --color-header: #be3144;
+    --color-hero: #292a2c;
+    --color-projects: #45567d;
+    --color-footer: #303841;
+}
+
+/* utilites */
+
+/* HEADER */
+header{
+    background-color: var(--color-header);
+}
+
+/* MAIN */
+main .hero{
+    background-color: var(--color-hero);
+}
+
+main .projects{
+    background-color: var(--color-projects);
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--color-footer);
+}
