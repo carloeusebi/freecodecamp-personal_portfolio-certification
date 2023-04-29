@@ -129,11 +129,15 @@ main #projects{
     width: 100%;
     object-fit: cover;
     height: 40rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .project-title{
     text-align: center;
     background-color: var(--color-footer);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .project-title h3{
@@ -178,11 +182,36 @@ main #contact{
     height: 85vh;
 }
 
+#contact h2{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+#contact p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 5rem;
+}
+
+.profile-link{
+    font-size: 2rem;
+    padding: 0 3rem;
+}
+
+.profile-link:hover{
+    position:relative;
+    top: 1rem;
+}
+
 /* FOOTER */
 footer{
     background-color: var(--color-footer);
     border-top: 5px solid var(--color-header);
+    padding: 3rem 0;
+    font-size: 1.8rem;
 }
+
 footer .flex.container{
     justify-content: space-between
 }
