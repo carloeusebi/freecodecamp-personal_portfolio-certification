@@ -130,7 +130,7 @@ main #projects{
 }
 
 #projects .column{
-    flex: 0 0 calc((1440px - 50px) / 3);
+    flex: 1 1 calc((1440px - 50px) / 3);
 }
 
 .project-image{
@@ -232,4 +232,22 @@ footer{
 
 footer .flex.container{
     justify-content: space-between
+}
+
+@media screen and (max-width: 1080px) {
+    html{
+        font-size: 5px;
+    }
+    
+    .column{
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 3px;
+    }    
+    .column{
+        padding: 0 50px;
+    }
 }
