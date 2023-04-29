@@ -96,21 +96,76 @@ main #welcome-section{
 /* work */
 main #projects{
     background-color: var(--color-projects);
+    justify-content: center;
+    padding: 8rem 0;
+}
+
+#projects h2{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 4rem;
+    font-weight: normal;
+    border-bottom: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 4rem;
 }
 
 #projects .flex.container{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     gap: 25px;       
 }
 
 #projects .column{
-    height: 100px;
     flex: 0 0 calc((100% - 50px) / 3);
 }
 
+.project-image{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+}
+
+.project-title{
+    text-align: center;
+    background-color: var(--color-footer);
+}
+
+.project-title h3{
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+.project-title-hidden{
+    color: darkorange;
+    visibility: hidden;
+}
+
+#projects .column:hover .project-title-hidden{
+    visibility: visible;
+}
+
+#projects .btn{
+    background-color: var(--color-footer);
+    font-size: 2rem;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+#projects .btn:hover{
+    background-color: var(--color-header);
+}
+
+#projects .btn:hover .btn-animation{
+    position: relative;
+    left: 3px;
+}
 /* contact */
 main #contact{
     background-color: var(--color-footer);
