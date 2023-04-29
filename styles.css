@@ -19,6 +19,16 @@ html{
 
 body{
     color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
 }
 
 /* debug */
@@ -26,6 +36,7 @@ body{
     border: 2px dashed white;
 }
 
+/* utilites */
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -35,8 +46,6 @@ body{
     display: flex;
 }
 
-/* utilites */
-
 /* HEADER */
 header{
     background-color: var(--color-header);
@@ -45,6 +54,17 @@ header{
     right: 0;
     top: 0;
     z-index: 1;
+    padding: 2rem 0;
+    box-shadow: 0 2px 0 black;
+}
+
+header ul{
+    justify-content: flex-end;
+}
+
+header li{
+    font-size: 2rem;
+    padding-left: 4rem;
 }
 
 /* MAIN */
