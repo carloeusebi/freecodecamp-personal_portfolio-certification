@@ -75,9 +75,22 @@ main #welcome-section{
 }
 
 #welcome-section .flex.container{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#welcome-section h1{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+#welcome-section p{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--color-header);
 }
 
 /* work */
